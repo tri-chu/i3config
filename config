@@ -117,12 +117,14 @@ assign [class="Google-chrome"] $ws2
 assign [class="Mozilla Firefox"] $ws2
 assign [class="mozilla firefox"] $ws2
 assign [class="firefox"] $ws2
+assign [class="Firefox"] $ws2
 assign [class="URxvt"] $ws3
 assign [class="Slack"] $ws4
 assign [class="slack"] $ws4
 assign [class="Discord"] $ws4
 assign [class="discord"] $ws4
 assign [class="Hexchat"] $ws4
+assign [class="Element"] $ws4
 assign [class="transmission"] $ws6
 assign [class="tixati"] $ws5
 assign [class="Tixati"] $ws5
@@ -194,6 +196,7 @@ exec discord
 exec tixati
 exec krusader
 exec clementine
+exec element-desktop
 exec --no-startup-id nm-applet
 exec xautolock -time 15 -locker '~/.config/i3/fuzzy_lock.sh' &
 

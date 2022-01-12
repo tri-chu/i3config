@@ -21,6 +21,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id "rofi -combi-modi drun,run -show combi"
 bindsym $mod+Shift+d exec --no-startup-id rofi -show window
 bindsym Mod1+Tab exec --no-startup-id rofi -show window
+bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 
 # Change focus
@@ -123,7 +124,6 @@ assign [class="Slack"] $ws4
 assign [class="slack"] $ws4
 assign [class="Discord"] $ws4
 assign [class="discord"] $ws4
-assign [class="Hexchat"] $ws4
 assign [class="Element"] $ws4
 assign [class="transmission"] $ws6
 assign [class="tixati"] $ws5
@@ -131,15 +131,15 @@ assign [class="Tixati"] $ws5
 assign [class="krusader"] $ws5
 assign [class="clementine"] $ws6
 assign [class="Clementine"] $ws6
-for_window [class="Hexchat"] floating disable
+assign [class="clementine"] $ws6
+assign [class="Clementine"] $ws6
+assign [class="mullvad VPN"] $ws6
+assign [class="Mullvad vpn"] $ws6
 
 # move workspace to next screen
 bindsym $mod+p move workspace to output right
 
-# TODO: add blob to move workspaces to next screen
-
-
-# create gif 
+# screen capture
 bindsym --release Print exec "scrot -m  '%s_%H%M_%d%m%Y_$wx$h.png' -e 'mv $f ~/Pictures/'"
 bindsym --release Ctrl+Print exec "scrot -u '%s_%H%M_%d%m%Y_$wx$h.png' -e 'mv $f ~/Pictures/'"
 bindsym --release Shift+Print exec "scrot -s '%s_%H%M_%d%m%Y_$wx$h.png' -e 'mv $f ~/Pictures/'"
@@ -192,13 +192,13 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 workspace_layout default
 exec firefox
 exec code
-exec hexchat
 exec slack
 exec discord
 exec tixati
 exec krusader
-exec clementine
 exec element-desktop
 exec --no-startup-id nm-applet
+exec "ibus-daemon -drxR"
 exec xautolock -time 15 -locker '~/.config/i3/fuzzy_lock.sh' &
-
+exec --no-startup-id bash ~/init.sh
+exec weechat-headless --daemon

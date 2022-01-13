@@ -13,7 +13,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/seoul256.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -22,6 +21,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
+Plug 'ayu-theme/ayu-vim'
 
 
 " Run PlugInstall if there are missing plugins
@@ -64,14 +64,18 @@ elseif MySys() == "linux"
 endif
 
 " Color theme
+set termguicolors     " enable true colors support
+let ayucolor="light"  " for light version of theme
+let ayucolor="mirage" " for mirage version of theme
+let ayucolor="dark"   " for dark version of theme
+
 if has("gui_running")
   set guioptions-=T
   set t_Co=256
-  colorscheme seoul256
 else
   set background=dark
-  colorscheme seoul256
 endif
+colorscheme ayu
 
 " encoding
 set encoding=utf-8

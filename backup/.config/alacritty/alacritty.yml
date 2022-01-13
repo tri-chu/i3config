@@ -86,19 +86,19 @@ font:
   normal:
     family: monospace # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
-    # style: Regular
+    style: Regular
 
   # The bold font face
   bold:
     family: monospace # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
-    # style: Bold
+    style: Bold
 
   # The italic font face
   italic:
     family: monospace # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
-    # style: Italic
+    style: Bold Italic
 
   # Point size of the font
   size: 11.0
@@ -138,28 +138,29 @@ custom_cursor_colors: false
 colors:
  # Default Colors
  primary:
-   background: '0x2d303b'
-   foreground: '0xc4cbd4'
+    background: '#1f2430'
+    foreground: '#cbccc6'
+    bright_foreground: '#f28779'
  # Normal colors
  normal:
-   black:   '0x212121'
-   red:     '0xc30771'
-   green:   '0x10a778'
-   yellow:  '0xa89c14'
-   blue:    '0x008ec4'
-   magenta: '0x523c79'
-   cyan:    '0x20a5ba'
-   white:   '0xe0e0e0'
+    black:   '#212733' #
+    red:     '#f08778' #
+    green:   '#53bf97' #
+    yellow:  '#fdcc60' #
+    blue:    '#60b8d6' # 
+    magenta: '#ec7171' #
+    cyan:    '#98e6ca' #
+    white:   '#fafafa' #
  # Bright colors
  bright:
-   black:   '0x212121'
-   red:     '0xfb007a'
-   green:   '0x5fd7af'
-   yellow:  '0xf3e430'
-   blue:    '0x20bbfc'
-   magenta: '0x6855de'
-   cyan:    '0x4fb8cc'
-   white:   '0xf1f1f1'
+    black:   '#686868'
+    red:     '#f58c7d'
+    green:   '#58c49c'
+    yellow:  '#ffd165'
+    blue:    '#65bddb'
+    magenta: '#f17676'
+    cyan:    '#9debcf'
+    white:   '#ffffff'
 
 # Visual Bell
 #

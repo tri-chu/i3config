@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+rsync -rvlt --whole-file --checksum --stats --progress --exclude ".git" "./backup" "~/"

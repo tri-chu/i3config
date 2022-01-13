@@ -146,7 +146,7 @@ bindsym --release Shift+Print exec "scrot -s '%s_%H%M_%d%m%Y_$wx$h.png' -e 'mv $
 bindsym --release $mod+Shift+Print exec "scrot -u -d 4 '~/Pictures/%s_%H%M_%d%m%Y_$wx$h.png'"
 
 # locking the screen
-bindsym $mod+Pause exec "~/.config/i3/scripts/blur_lock"
+bindsym $mod+Pause exec "~/.config/i3/scripts/blur-lock"
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)

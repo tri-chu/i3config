@@ -3,9 +3,9 @@
 PICTURE=/tmp/i3lock.png
 SCREENSHOT="scrot $PICTURE"
 
-BLUR="5x4"
+BLUR="-filter Gaussian -resize 10% -define filter:sigma=2.5 -resize 1000%"
 
 $SCREENSHOT
-convert $PICTURE -blur $BLUR $PICTURE
+convert $PICTURE $BLUR $PICTURE
 i3lock -i $PICTURE
 rm $PICTURE

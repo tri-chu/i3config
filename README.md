@@ -1,2 +1,3 @@
-# i3config
-my personal i3config 
+# Config backup repo
+
+run install to sync latest changes to current home

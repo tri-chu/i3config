@@ -205,5 +205,5 @@ exec element-desktop
 exec --no-startup-id nm-applet
 exec "ibus-daemon -drxR"
 exec xautolock -time 15 -locker '~/.config/i3/scripts/blur-lock' &
-exec --no-startup-id bash ~/init.sh
+exec --no-startup-id bash "~/.config/i3/scripts/init" &
 exec weechat-headless --daemon

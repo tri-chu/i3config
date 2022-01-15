@@ -217,6 +217,7 @@ bindsym $mod+r mode "resize"
 #####################################
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id ~/.config/i3/scripts/init
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -226,6 +227,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #}
 #
 workspace_layout default
+exec dex -a -s "~/.config/autostart/"
 exec firefox
 exec code
 exec slack
@@ -235,6 +237,5 @@ exec krusader
 exec element-desktop
 exec --no-startup-id nm-applet
 exec "ibus-daemon -drxR"
-exec xautolock -time 15 -locker '~/.config/i3/scripts/blur-lock' &
-exec --no-startup-id bash "~/.config/i3/scripts/init" &
+exec xautolock -time 15 -locker "~/.config/i3/scripts/blur-lock" &
 exec weechat-headless --daemon

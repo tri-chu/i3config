@@ -153,7 +153,7 @@ client.placeholder      #1F2430 #1F2430 #FFFFFF #000000   #0C0C0C
 client.background       #1F2430
 
 ######## Gaps setting ########
-#smart_gaps on
+# smart_gaps on
 smart_borders no_gaps
 gaps inner 4
 gaps outer 0 
@@ -162,7 +162,7 @@ bindsym $ModButton+g gaps inner current minus 5
 bindsym $ModButton+Shift+g gaps inner current plus 5
 
 #border_radius 4
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 #########################
 

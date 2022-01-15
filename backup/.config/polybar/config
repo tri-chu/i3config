@@ -41,8 +41,8 @@ height = 20
 ;radius = 6.0
 fixed-center = false
 
-background = ${colors.fg}
-foreground = ${colors.bg}
+background = ${colors.bg}
+foreground = ${colors.fg}
 
 line-size = 3
 line-color = #f00

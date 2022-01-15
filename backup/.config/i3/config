@@ -111,6 +111,8 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # assign program to workspace
+assign [class="steam"] $ws1
+assign [class="Steam"] $ws1
 assign [class="Code"] $ws1
 assign [class="code"] $ws1
 assign [class="google-chrome"] $ws2

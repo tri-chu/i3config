@@ -234,7 +234,6 @@ workspace_layout default
 exec dex -a -s "~/.config/autostart/"
 exec firefox
 exec code
-exec slack
 exec discord
 exec tixati
 exec krusader

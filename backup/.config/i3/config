@@ -242,4 +242,5 @@ exec --no-startup-id nm-applet
 exec "ibus-daemon -drxR"
 exec xautolock -time 15 -locker "~/.config/i3/scripts/blur-lock" &
 # exec weechat-headless --daemon
-exec feh --recursive --bg-fill --randomize "~/Pictures/wallpapers-UW" &
+# exec feh --recursive --bg-fill --randomize "~/Pictures/wallpapers-UW" &
+exec --no-startup-id nitrogen --restore

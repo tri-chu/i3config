@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+firefox &
+code &
+discord &
+tixati &
+krusader &
+element-desktop &
+nm-applet &
+ibus-daemon -drxR &
+
+xautolock -time 15 -locker "~/.config/i3/scripts/blur-lock" &
+# exec weechat-headless --daemon
+picom -b &
+feh --recursive --bg-scale --randomize $HOME/Pictures/wallpapers &
+# exec --no-startup-id nitrogen --restore
+

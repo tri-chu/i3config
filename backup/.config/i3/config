@@ -223,26 +223,6 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id ~/.config/i3/scripts/init
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#    status_command i3status -c ~/.config/i3/i3status.conf
-#    # tray_output primary
-#}
-#
 workspace_layout default
-exec dex -a -s "~/.config/autostart/"
-exec firefox
-exec code
-exec discord
-exec tixati
-exec krusader
-exec element-desktop
-exec --no-startup-id nm-applet
-exec "ibus-daemon -drxR"
-exec xautolock -time 15 -locker "~/.config/i3/scripts/blur-lock" &
-# exec weechat-headless --daemon
-exec --no-startup-id picom -b
-exec feh --recursive --bg-scale --randomize $HOME/Pictures/wallpapers
-# exec --no-startup-id nitrogen --restore
-
+exec_always --no-startup-id dex -a -s "~/.config/autostart/"
+exec_always --no-startup-id ~/.config/i3/scripts/autostart

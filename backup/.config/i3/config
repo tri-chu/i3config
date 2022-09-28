@@ -242,5 +242,7 @@ exec --no-startup-id nm-applet
 exec "ibus-daemon -drxR"
 exec xautolock -time 15 -locker "~/.config/i3/scripts/blur-lock" &
 # exec weechat-headless --daemon
+exec --no-startup-id picom -b
 exec_always feh --recursive --bg-scale --randomize "~/Pictures/wallpapers" &
 # exec --no-startup-id nitrogen --restore
+

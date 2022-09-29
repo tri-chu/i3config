@@ -75,7 +75,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+Shift+a focus child
 
 # define workspaces
 set $ws1 "1"
@@ -115,16 +115,12 @@ assign [class="steam"] $ws1
 assign [class="Steam"] $ws1
 assign [class="Code"] $ws1
 assign [class="code"] $ws1
-assign [class="google-chrome"] $ws6
-assign [class="Google-chrome"] $ws6
-assign [class="chrome"] $ws6
-assign [class="chrome"] $ws6
+assign [class="google-chrome"] $ws2
+assign [class="chrome"] $ws2
 assign [class="Mozilla Firefox"] $ws2
 assign [class="mozilla firefox"] $ws2
 assign [class="firefox"] $ws2
 assign [class="Firefox"] $ws2
-assign [class="URxvt"] $ws3
-assign [class="Alacritty"] $ws3
 assign [class="Slack"] $ws4
 assign [class="slack"] $ws4
 assign [class="Discord"] $ws4

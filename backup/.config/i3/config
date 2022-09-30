@@ -142,8 +142,8 @@ assign [class="Mullvad vpn"] $ws6
 #########################
 
 # class                 border  bground text    indicator child_border
-client.focused          #FFCC66 #33415E #FFFFFF #2E9EF4   #FFCC66
-client.focused_inactive #1F2430 #1F2430 #FFFFFF #484E50   #1F2430
+client.focused          #2E9EF4 #33415E #FFFFFF #2E9EF4   #2E9EF4
+client.focused_inactive #174F7A #1F2430 #FFFFFF #174F7A   #174F7A
 client.unfocused        #1F2430 #1F2430 #888888 #292D2E   #1F2430
 client.urgent           #2F343A #FF3333 #FFFFFF #900000   #900000
 client.placeholder      #1F2430 #1F2430 #FFFFFF #000000   #0C0C0C
@@ -151,9 +151,9 @@ client.placeholder      #1F2430 #1F2430 #FFFFFF #000000   #0C0C0C
 client.background       #1F2430
 
 ######## Gaps setting ########
-# smart_gaps on
+smart_gaps on
 smart_borders no_gaps
-gaps inner 4
+gaps inner 8
 gaps outer 0 
 gaps bottom 0
 bindsym $ModButton+g gaps inner current minus 5

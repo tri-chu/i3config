@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/bin/ibus-daemon -drxR
+Name=ibus-daemon
+Comment=daemon program for ibus
+Type=Application

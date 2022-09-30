@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/bin/krusader
+Name=krusader
+Comment=advanced twin-panel file manager and FTP client by KDE
+Type=Application

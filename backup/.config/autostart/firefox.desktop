@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/usr/bin/firefox
+Name=firefox
+Comment=a free and open source web browser from Mozilla
+Type=Application

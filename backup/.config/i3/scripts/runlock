@@ -4,4 +4,7 @@
 # env XSECURELOCK_SAVER=saver_mplayer XSECURELOCK_DISCARD_FIRST_KEYPRESS=0 xsecurelock
 
 # XScreensaver
-env XSECURELOCK_XSCREENSAVER_PATH=/usr/libexec/xscreensaver/m6502 XSECURELOCK_SAVER=saver_xscreensaver xsecurelock
+export XSECURELOCK_DISCARD_FIRST_KEYPRESS=0
+export XSECURELOCK_XSCREENSAVER_PATH=/usr/libexec/xscreensaver
+export XSECURELOCK_SAVER=saver_xscreensaver 
+env xsecurelock

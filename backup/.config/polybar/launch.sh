@@ -4,8 +4,7 @@ killall -q polybar
 
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-      if [ $m == 'HDMI-0' ]
-      then
+      if [ $m == 'HDMI-0' ]; then
         MONITOR=$m polybar --reload bar1 &
       else
         MONITOR=$m polybar --reload bar2 &
@@ -21,7 +20,7 @@ fi
 # polybar-msg cmd quit
 
 # Launch bar1 and bar2
-echo "---" | tee -a /tmp/polybar1.log
+# echo "---" | tee -a /tmp/polybar1.log
 # polybar bar1 >>/tmp/polybar1.log 2>&1 & disown
 # polybar bar2 >>/tmp/polybar2.log 2>&1 & disown
 

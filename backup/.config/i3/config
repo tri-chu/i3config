@@ -168,7 +168,8 @@ for_window [class="^.*"] border pixel 3
 ############################
 
 # move workspace to next screen
-bindsym $mod+p move workspace to output right
+bindsym $mod+greater move workspace to output down
+bindsym $mod+lesser move workspace to output up
 
 # screen capture
 bindsym --release Print exec "scrot -m  '%s_%H%M_%d%m%Y_$wx$h.png' -e 'mv $f ~/Pictures/'"

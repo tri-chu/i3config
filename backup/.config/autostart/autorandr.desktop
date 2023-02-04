@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=autorandr
-Comment=autorandr script
-Exec=/usr/bin/autorandr
-StartupNotify=false
-Terminal=false

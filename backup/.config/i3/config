@@ -104,6 +104,7 @@ bindsym $mod+0 workspace $ws10
 # switch to output
 bindsym $mod+Shift+greater move workspace to output down
 bindsym $mod+Shift+less move workspace to output up
+bindsym $mod+Shift+p exec --no-startup-id "/home/$USER/.config/i3/scripts/cycle-ws.py"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1

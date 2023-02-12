@@ -2,12 +2,14 @@
 
 killall -q polybar
 
+PRIMARY="$(xrandr --query | grep "primary" | cut -d' ' -f1)"
+
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-      if [ $m == 'HDMI-0' ]; then
-        MONITOR=$m polybar --reload bar1 &
+      if [ $m == $PRIMARY ]; then
+        MONITOR=$m polybar --reload bar1 >>/tmp/polybar1.log 2>&1 & disown
       else
-        MONITOR=$m polybar --reload bar2 &
+        MONITOR=$m polybar --reload bar2 >>/tmp/polybar$m.log 2>&1 & disown
       fi
   done
 else

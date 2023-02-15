@@ -235,6 +235,7 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id ~/.config/i3/scripts/init
+exec_always --no-startup-id xrdb -merge ~/.Xresources
 
 workspace_layout default
 exec --no-startup-id dex -a -s "~/.config/autostart/"

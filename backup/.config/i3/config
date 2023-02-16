@@ -175,10 +175,10 @@ for_window [class="^.*"] border pixel 3
 ###### Screen Rotate #######
 ############################
 
-bindsym Ctrl+$mod+k exec "xrotate" 
-bindsym Ctrl+$mod+j exec "xrotate -i"
-bindsym Ctrl+$mod+h exec "xrotate -l"
-bindsym Ctrl+$mod+l exec "xrotate -r"
+bindsym Ctrl+$mod+k exec "rotate" 
+bindsym Ctrl+$mod+j exec "rotate i"
+bindsym Ctrl+$mod+h exec "rotate l"
+bindsym Ctrl+$mod+l exec "rotate r"
 
 ############################
 ######## Screen Cap ########

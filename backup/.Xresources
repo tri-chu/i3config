@@ -1,52 +1,51 @@
 Xft.dpi: 100
 
-!! catpuccin - mocha
-!! https://github.com/catppuccin/urxvt/blob/main/mocha.Xresources
-
 ! special
-URxvt.background: #1E1E2E
-URxvt.foreground: #CDD6F4
-URxvt.cursorColor: #F5E0DC
+URxvt.foreground:   #cbccc6
+URxvt.background:   #1f2430
+URxvt.cursorColor:  #ffcc66
 
 ! black
-URxvt.color0: #45475A
-URxvt.color8: #585B70
+URxvt.color0:       #1f2430
+URxvt.color8:       #707a8c
 
 ! red
-URxvt.color1: #F38BA8
-URxvt.color9: #F38BA8
+URxvt.color1:       #ff3333
+URxvt.color9:       #ff3333
 
 ! green
-URxvt.color2: #A6E3A1
-URxvt.color10: #A6E3A1
+URxvt.color2:       #bae67e
+URxvt.color10:      #bae67e
 
 ! yellow
-URxvt.color3: #F9E2AF
-URxvt.color11: #F9E2AF
+URxvt.color3:       #ffa759
+URxvt.color11:      #ffa759
 
 ! blue
-URxvt.color4: #89B4FA
-URxvt.color12: #89B4FA
+URxvt.color4:       #73d0ff
+URxvt.color12:      #73d0ff
 
 ! magenta
-URxvt.color5: #F5C2E7
-URxvt.color13: #F5C2E7
+URxvt.color5:       #d4bfff
+URxvt.color13:      #d4bfff
 
 ! cyan
-URxvt.color6: #94E2D5
-URxvt.color14: #94E2D5
+URxvt.color6:       #95e6cb
+URxvt.color14:      #95e6cb
 
 ! white
-URxvt.color7: #BAC2DE
-URxvt.color15: #A6ADC8
+URxvt.color7:       #cbccc6
+URxvt.color15:      #cbccc6
 
 !! URxvt Appearance
-Rxvt.font:			xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
-URxvt.boldFont:		xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+URxvt.font:			xft:Cascadia Code:style=Regular:size=12:antialias=true:hinting=true
+URxvt.boldFont:		xft:Cascadia Code:style=bold:psize=12:antialias=true:hinting=true
+URxvt.italicFont: xft:Cascadia Code:style=Italic:size=12:antialias=true:hinting=true
+URxvt.boldItalicfont: xft:Cascadia Code:style=Bold Italic:size=12:antialias=true:hinting=true
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
-URxvt.internalBorder: 24
+URxvt.internalBorder: 4
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
 URxvt.saveline: 2048

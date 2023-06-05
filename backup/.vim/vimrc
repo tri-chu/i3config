@@ -17,11 +17,11 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
-Plug 'rafi/awesome-vim-colorschemes'
+"" Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'ayu-theme/ayu-vim'
+Plug 'luxed/ayu-vim'
 
 
 " Run PlugInstall if there are missing plugins
